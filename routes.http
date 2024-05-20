@@ -2,7 +2,7 @@ POST https://node-basic-final.onrender.com/videos
 Content-type: application/json
 
 {
-    "title": "Video node",
+    "title": "Video 01",
     "description": "Esse é o primeiro video",
     "duration": 180
 }
@@ -23,4 +23,4 @@ Content-type: application/json
 
 ###
 
-DELETE  https://node-basic-final.onrender.com/videos/id
+DELETE  https://node-basic-final.onrender.com/videos/02e85ea8-0d22-4cbc-8c57-e1fb8281271f

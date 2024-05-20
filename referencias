@@ -21,3 +21,20 @@
 // Set, Map (estudar)
 
 // UUID - Universal Unique ID
+
+
+/* fetch(input: string, {
+    method?: "GET" | "POST" | "PUT" | "DELETE",
+    mode?: "navigate" | "same-origin" | "no-cors" | "cors",
+    headers?: { [ key: string ]: any }
+  }): Promise<Response>
+
+
+ fetch('/videos',{
+    method: 'POST',
+    body: JSON.stringify({
+        title: "Oi", description: "Oi, Marcos...", duration: 123443 
+    }),
+    headers: { "Content-Type": "application/json" }
+})
+*/
