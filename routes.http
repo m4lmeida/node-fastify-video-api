@@ -1,4 +1,4 @@
-POST http://localhost:3333/videos
+POST https://node-basic-final.onrender.com/videos
 Content-type: application/json
 
 {
@@ -9,10 +9,10 @@ Content-type: application/json
 
 ###
 
-GET http://localhost:3333/videos
+GET https://node-basic-final.onrender.com/videos
 
 ###
-PUT http://localhost:3333/videos/63b89c8e-166e-4346-bb72-53b58215316d
+PUT https://node-basic-final.onrender.com/videos/63b89c8e-166e-4346-bb72-53b58215316d
 Content-type: application/json
 
 {
