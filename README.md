@@ -11,7 +11,19 @@ Um dos principais conceitos aplicados foi a **abstração da camada de dados**, 
 
 ---
 
-## 🚀 Funcionalidades
+## 🚀 API ao Vivo (Live Demo)
+
+A API está com deploy na plataforma Render e pode ser acessada através do seguinte endpoint:
+
+**URL Base:** `https://node-basic-final.onrender.com`
+
+[![Status da API](https://img.shields.io/website?url=https%3A%2F%2Fnode-basic-final.onrender.com%2Fvideos&up_message=online&down_message=offline&label=API%20Status)](https://node-basic-final.onrender.com/videos)
+
+Você pode testar os endpoints diretamente usando ferramentas como o Postman, Insomnia ou o `curl` no seu terminal.
+
+---
+
+## ✨ Funcionalidades
 
 - **Criação de vídeos:** Adiciona um novo vídeo ao banco de dados.
 - **Listagem de vídeos:** Retorna todos os vídeos, com a opção de busca por título.
@@ -27,10 +39,11 @@ Um dos principais conceitos aplicados foi a **abstração da camada de dados**, 
 - **Banco de Dados:** [PostgreSQL](https://www.postgresql.org/)
 - **Driver de Conexão (Postgres):** [node-postgres](https://node-postgres.com/)
 - **Gerenciamento de Ambiente:** [Dotenv](https://github.com/motdotla/dotenv)
+- **Plataforma de Deploy:** [Render](https://render.com/)
 
 ---
 
-## ⚙️ Como Executar o Projeto
+## ⚙️ Como Executar o Projeto Localmente
 
 Para executar este projeto localmente, siga os passos abaixo:
 
@@ -79,7 +92,7 @@ Para executar este projeto localmente, siga os passos abaixo:
 
 ## 🔌 Endpoints da API
 
-Aqui estão os endpoints disponíveis e como utilizá-los:
+Aqui estão os endpoints disponíveis e como utilizá-los (substitua `http://localhost:3333` pela URL da API ao vivo para testar em produção):
 
 #### `POST /videos`
 Cria um novo vídeo.
@@ -99,9 +112,9 @@ Cria um novo vídeo.
 #### `GET /videos`
 Lista todos os vídeos.
 
-**Exemplo de Requisição:** `GET http://localhost:3333/videos`
+**Exemplo de Requisição:** `GET https://node-basic-final.onrender.com/videos`
 
-**Busca por Título (Query Param):** `GET http://localhost:3333/videos?search=Fastify`
+**Busca por Título (Query Param):** `GET https://node-basic-final.onrender.com/videos?search=Fastify`
 
 **Success Response:** `Status: 200 OK`
 ```json
@@ -120,7 +133,7 @@ Lista todos os vídeos.
 #### `PUT /videos/:id`
 Atualiza um vídeo existente.
 
-**Exemplo de Requisição:** `PUT http://localhost:3333/videos/a1b2c3d4-e5f6-7890-1234-567890abcdef`
+**Exemplo de Requisição:** `PUT https://node-basic-final.onrender.com/videos/a1b2c3d4-e5f6-7890-1234-567890abcdef`
 
 **Request Body:**
 ```json
@@ -137,6 +150,6 @@ Atualiza um vídeo existente.
 #### `DELETE /videos/:id`
 Deleta um vídeo.
 
-**Exemplo de Requisição:** `DELETE http://localhost:3333/videos/a1b2c3d4-e5f6-7890-1234-567890abcdef`
+**Exemplo de Requisição:** `DELETE https://node-basic-final.onrender.com/videos/a1b2c3d4-e5f6-7890-1234-567890abcdef`
 
 **Success Response:** `Status: 204 No Content`
